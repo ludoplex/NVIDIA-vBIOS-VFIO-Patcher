@@ -112,7 +112,7 @@ class VBIOSROM(object):
                     "Expected two 'NPDE' markers after the 'NPDS' marker")
         except CheckException as e:
             if ignore_check:
-                print("Encountered error during sanity check: %s" % str(e))
+                print(f"Encountered error during sanity check: {str(e)}")
                 print("Ignoring...")
                 return
             else:
